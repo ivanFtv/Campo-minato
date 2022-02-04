@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.flex {
+    width: 420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 26px;
+    text-align: center;
+    transition-duration: 500ms;
+}
+
+#gameover {
+    opacity: 0%;
+}
+
+.square:hover {
+    background-color: rgb(194, 193, 193);
+    transform: scale(1.1);
+}
+
+.good {
+    background-color: green;
+}
+
+.exploded {
+    background-color: red;
+    background-image: url("bomba.png");
+    background-size: contain;
+}
